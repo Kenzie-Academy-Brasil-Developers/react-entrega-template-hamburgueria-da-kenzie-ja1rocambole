@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { Button } from ".";
 
 export const StyledButton = styled(Button)`
-  border: 2px solid var(--color-primary);
+  border: 2px solid ${({ background }) => background};
   border-radius: 8px;
 
   color: ${({ color }) => color};

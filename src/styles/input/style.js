@@ -21,6 +21,10 @@ export const StyledInputContainer = styled.div`
 
     border-radius: 8px;
   }
+  input::placeholder {
+    color: var(--color-gray-20);
+  }
+
   button {
     position: absolute;
     right: 20px;
@@ -28,5 +32,9 @@ export const StyledInputContainer = styled.div`
 
   @media (min-width: 600px) {
     margin-bottom: 0;
+    padding: 0;
+    button {
+      right: 10px;
+    }
   }
 `;
