@@ -158,7 +158,7 @@ body{
 .container {
   padding: 0.6rem;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 `;
