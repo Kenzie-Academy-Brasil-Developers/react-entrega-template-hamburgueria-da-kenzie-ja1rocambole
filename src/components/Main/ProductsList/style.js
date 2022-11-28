@@ -9,13 +9,6 @@ export const StyledProductsList = styled.ul`
   overflow-y: hidden;
   white-space: nowrap;
 
-  /* depois tenho que apagar isso prq isso é só pra simular um card */
-  div {
-    height: 346px;
-    min-width: 300px;
-    background-color: brown;
-  }
-
   @media (min-width: 600px) {
     width: 65%;
     flex-wrap: wrap;
