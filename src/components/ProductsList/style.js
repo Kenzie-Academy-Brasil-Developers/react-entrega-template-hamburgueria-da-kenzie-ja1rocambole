@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { ProductsList } from ".";
 
 export const StyledProductsList = styled.ul`
   padding-top: 5px;

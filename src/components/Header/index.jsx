@@ -1,9 +1,9 @@
 import React from "react";
-import { Input } from "../../styles/input";
+import { Input } from "../input";
 import { StyledTitle, StyledText } from "../../styles/typography";
 import { StyledHeader } from "./style";
 
-export const Header = () => {
+export const Header = ({ products, filteredProducts, setFilteredProducts }) => {
   return (
     <StyledHeader>
       <div className="container">
@@ -19,7 +19,11 @@ export const Header = () => {
           </StyledText>
         </StyledTitle>
 
-        <Input />
+        <Input
+          products={products}
+          filteredProducts={filteredProducts}
+          setFilteredProducts={setFilteredProducts}
+        />
       </div>
     </StyledHeader>
   );

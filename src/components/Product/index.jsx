@@ -1,9 +1,21 @@
 import React from "react";
-import { StyledText, StyledTitle } from "../../../../styles/typography";
-import { ButtonCardProduct } from "./ButtonCardProduct";
+import { StyledText, StyledTitle } from "../../styles/typography";
+import { StyledButton } from "../../styles/button";
 import { StyledProduct } from "./style";
 
-export const Product = ({ id, img, name, category, price }) => {
+export const Product = ({
+  id,
+  img,
+  name,
+  category,
+  price,
+  currentSale,
+  setCurrentSale,
+}) => {
+  const addCurrentSale = (event) => {
+    const idProduct = parseInt(event.target.parentNode.children[0].innerText);
+    setCurrentSale([...currentSale, idProduct]);
+  };
   return (
     <>
       <StyledProduct>
@@ -41,7 +53,14 @@ export const Product = ({ id, img, name, category, price }) => {
               currency: "BRL",
             })}
           </StyledText>
-          <ButtonCardProduct>Adicionar</ButtonCardProduct>
+          <StyledButton
+            background="var(--color-primary)"
+            color="var(--white-fixed)"
+            buttonSize="medium"
+            onClick={addCurrentSale}
+          >
+            Adicionar
+          </StyledButton>
         </div>
       </StyledProduct>
     </>
