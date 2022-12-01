@@ -5,6 +5,12 @@ export const StyledMain = styled.main`
     & > div {
       display: flex;
       justify-content: space-between;
+
+      .container-cart {
+        height: fit-content;
+        position: sticky;
+        top: 20px;
+      }
     }
 
     .container-cart {

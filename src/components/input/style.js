@@ -16,7 +16,7 @@ export const StyledInputContainer = styled.div`
     height: 100%;
     width: 100%;
 
-    padding: 10px 50px 10px 15px;
+    padding: 10px 115px 10px 15px;
     border: 2px solid var(--color-gray-20);
 
     border-radius: 8px;

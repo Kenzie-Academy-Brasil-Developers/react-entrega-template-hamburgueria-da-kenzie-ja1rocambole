@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
-import { Button } from ".";
+// import { Button } from ".";
 
-export const StyledButton = styled(Button)`
+export const StyledButton = styled.button`
   border: 2px solid ${({ background }) => background};
   border-radius: 8px;
 

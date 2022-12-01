@@ -155,12 +155,18 @@ body{
   font-family: 'Inter', sans-serif;
 }
 
+
+button { 
+  cursor: pointer;
+}
+
 .container {
   padding: 0.6rem;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
+
 
 .display-none {
   display: none;

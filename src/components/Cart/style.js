@@ -17,22 +17,25 @@ export const StyledCartAside = styled.aside`
   background-color: var(--color-gray-0);
 
   ul {
-    height: 320px;
+    height: 158px;
 
     display: flex;
     flex-direction: column;
     gap: 20px;
 
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     white-space: nowrap;
 
     margin-bottom: 20px;
   }
-
-  ul div {
-    min-height: 80px;
-    width: 100%;
-    background-color: brown;
+  ul > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
   }
 
   .line-grey {
